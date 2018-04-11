@@ -1,0 +1,14 @@
+extends layout
+block content
+    form( method="POST" , action = '/articles/add')
+        div(align = 'center')
+            .col-md-5#form-group
+                label Title:
+                input.form-control(name = 'title' , type="text")
+            .col-md-5#form-group
+                label Author:
+                input.form-control( name = 'author' , type ="text" )
+            .col-md-5#form-group
+                label Body:
+                textarea.form-control( name = 'body' , rows="4"  )
+            input.btn.btn-success( type='submit', value="Submit" )

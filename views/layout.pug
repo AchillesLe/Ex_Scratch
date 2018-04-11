@@ -1,0 +1,15 @@
+doctype html
+html 
+    head
+        title #{title}
+        link(rel="stylesheet", href="/boostrap/dist/css/bootstrap.css")
+        link(rel="stylesheet", href="/css/style.css")
+        script(src="/jquery/dist/jquery.min.js")
+    body
+        include layout/header
+        .container
+            block content
+            br
+            hr
+            footer
+                include layout/footer

@@ -1,0 +1,15 @@
+extends layout
+block content
+
+    form( method="post" action="/article/edit/" + article.id )
+        div(align = 'center')
+            .col-md-5#form-group
+                label Title:
+                input.form-control(name = 'title' , type="text" , value = article.title )
+            .col-md-5#form-group
+                label Author:
+                input.form-control( name = 'author' , type ="text" , value= article.author )
+            .col-md-5#form-group
+                label Body:
+                textarea.form-control( name = 'body' , rows="4"  ) #{article.body}
+            input.btn.btn-success( type='submit', value="Submit" )

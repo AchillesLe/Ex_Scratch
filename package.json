@@ -1,0 +1,26 @@
+{
+  "name": "express_cratch",
+  "version": "1.0.0",
+  "description": "This is first time I make a website with nodejs",
+  "main": "app.js",
+  "scripts": {
+    "test": "no"
+  },
+  "repository": {
+    "type": "git",
+    "url": "no"
+  },
+  "keywords": [
+    "no"
+  ],
+  "author": "Achilles",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "jade": "^1.11.0",
+    "jquery": "^3.3.1",
+    "mongoose": "^5.0.12",
+    "pug": "^2.0.3"
+  }
+}
